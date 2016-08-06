@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: "Lato", sans-serif;}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="jumbotron text-center">
+
+  <h1>Hi there!<br>This is Himank here!</h1>
+  <p>This is a set of webpages to give you a brief about myself. So, let's get started..</p>
+</div>
+
+<ul class="tab">
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Home')">Home</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Academics')">Academics</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Technical')">Technical Skills</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Internships')">Internships</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Responsibilities')">Posts of Responsibilities</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Employment')">Current Employment Status</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Hobbies')">Co-Curriculum</a></li>
+</ul>
+
+<div id="Home" class="tabcontent">
+  <h3>BRIEF INTRODUCTION</h3>
+  <p>I am a 3rd year B.Tech Computer Science studebt at DELHI TECHNOLOGICAL UNIVERSITY with good academic record and keen interest and practical exposure in the field of graphic designing and event management.
+
+  <h3>CONTACT</h3>
+  <b>Phone No. </b>: +91-801-080-6004
+  <br><b>Email</b>: himank.kanojia@gmail.com
+  <br><b>Git</b>:<a href="https://github.com/himank25">https://github.com/himank25</a>
+  <br><br><a href="https://www.facebook.com/profile.php?id=100001089115054">Facebook</a>     <a href="https://www.instagram.com/himaaaaankkk/?hl=en">Instagram</a>
+  </p>
+</div>
+
+<div id="Academics" class="tabcontent">
+  <div class="col-md-4">
+  <h3>GRADUATION</h3>
+  <p>
+    <b>Program</b>: B.Tech in Computer Science
+    <br><b>Institute </b>: Delhi Technological University
+    <br><b>Aggregate</b> : 69%
+    <br><b>Completion</b> : 2018
+  </p>
+  </div>
+  <div class="col-md-4">
+  <h3>HSC</h3>
+    <p>
+    <b>Program</b>: 12th
+    <br><b>Institute </b>: CBSE
+    <br><b>Aggregate</b> : 93%
+    <br><b>Completion</b> : 2014
+    </p></div>
+
+  <div class="col-md-4">
+  <h3>SSC</h3>
+    <p>
+    <b>Program</b>: 10th
+    <br><b>Institute </b>: CBSE
+    <br><b>Aggregate</b> : 95%
+    <br><b>Completion</b> : 2012
+    </p></div>
+</div>
+
+<div id="Technical" class="tabcontent">
+  
+    <div class="col-md-4">
+      <h3> PROGRAMMING LANGUAGES</h3>
+      <ul>
+        <li>C/C++</li>
+        <li>Java</li>
+        <li>Python</li>
+      </ul>
+    </div>
+    
+    <div class="col-md-4">
+      <h3> WEB TECHNOLOGIES</h3>
+      <ul>
+        <li>HTML</li>
+        <li>SQL</li>        
+      </ul>
+    </div>
+
+    <div class="col-md-4">
+      <h3> SOFTWARES</h3>
+      <ul>
+        <li>Adobe Photoshop</li>
+        <li>Adobe Illustrator</li>
+        <li>Microsoft Office</li>        
+      </ul>
+    </div>
+</div>
+
+<div id="Internships" class="tabcontent">
+  <h3>UI/UX Design Intern, Placement Boat</h3>
+  <p>
+    Worked on the design and development of the website using Photoshop an Illustrator.
+    Designed 35 webpages in a span of 5 weeks.
+    <br><b>Duration</b>: Jun-Jul '15
+    <br><b>Received</b>: The Best Intern Award (among 15 interns) from the CEO of the organisation.
+  </p>
+</div>
+
+<div id="Responsibilities" class="tabcontent">
+  <h3>DESIGN HEAD, Cognitive Minds</h3>
+  <p>Head of the designing team at Cognitive Minds, a society local to DTU. Designed the logo, posters,
+  flyers and banners for various events including the annual fest. Conducted classes for Photoshop
+  for 10-15 students on a regular basis.</p>
+  <br>
+  <h3>LOGISTICS HEAD, Footsoul '16</h3>
+  <p>Head of the logistics department for Footsoul '16, the annual football fest of DTU.</p>
+  <br>
+  <h3>HOSPITALITY HEAD, National Freestyle Football Championship '16, DTU</h3>
+  <p>Head of the hospitality department for National Freestyle Football Championship '16, DTU.</p>
+</div>
+
+<div id="Employment" class="tabcontent">
+  <h3>BOOKED</h3>
+  <p>Currently working as a core team member at Booked, a budding start-up. Responsible for the technical department (application, back-end development, server scripting, testing) for the same</p>
+</div>
+
+<div id="Hobbies" class="tabcontent">
+  <ul>
+    <li>Member of the cricket team that won the ARENA '16, the annual sports fest of DTU.</li>
+    <li>Hobbies include listening music, playing cricket, watching TV series and movies.</li>
+  </ul>
+</div>
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+</body>
+</html>
